@@ -5,7 +5,7 @@ import { HiDotsHorizontal } from "react-icons/hi";
 const ManageNavigation = () => {
   return (
     <nav className="manage-navigation" aria-label="Manage sessions navigation">
-      <Link className="manage-back-button" to="/setup">
+      <Link className="manage-back-button" to="/?stage=2">
         <FiArrowLeft aria-hidden="true" />
         Back
       </Link>
@@ -15,10 +15,10 @@ const ManageNavigation = () => {
       </button>
 
       <div className="manage-forward-actions">
-        <button className="manage-skip-button" type="button">
+        <Link className="manage-skip-button" to="/?stage=4">
           Skip
-        </button>
-        <Link className="manage-save-button" to="/calender">
+        </Link>
+        <Link className="manage-save-button" to="/?stage=4">
           Save &amp; Continue
           <FiArrowRight aria-hidden="true" />
         </Link>

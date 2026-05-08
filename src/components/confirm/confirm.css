@@ -79,12 +79,13 @@ button {
   inset: auto 0 0;
   width: 100%;
   opacity: 0.95;
+  top: 2.5rem;
 }
 
 .confirm-sidebar-school {
   position: absolute;
   left: 12%;
-  bottom: 12px;
+  bottom: 30px;
   width: 78%;
   filter: drop-shadow(0 16px 18px rgba(27, 45, 160, 0.18));
 }
@@ -274,6 +275,7 @@ button {
   color: #3044f5;
   font-size: 16px;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .confirm-back-button {
@@ -354,6 +356,24 @@ button {
 
   .confirm-input-row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .confirm-card {
+    padding: 16px;
+  }
+
+  .confirm-tabs {
+    gap: 8px;
+  }
+
+  .confirm-tab {
+    flex: 1 1 150px;
+  }
+
+  .confirm-input-panel {
+    padding: 12px;
   }
 }
 

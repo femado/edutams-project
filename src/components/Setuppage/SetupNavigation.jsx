@@ -4,16 +4,16 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 const SetupNavigation = () => {
   return (
     <nav className="setup-navigation" aria-label="School setup navigation">
-      <Link className="setup-back-button" to="/">
+      <Link className="setup-back-button" to="/?stage=1">
         <FiArrowLeft aria-hidden="true" />
         Back
       </Link>
 
       <div className="setup-forward-actions">
-        <button className="setup-skip-button" type="button">
+        <Link className="setup-skip-button" to="/?stage=3">
           Skip
-        </button>
-        <Link className="setup-save-button" to="/manage">
+        </Link>
+        <Link className="setup-save-button" to="/?stage=3">
           Save &amp; Continue
           <FiArrowRight aria-hidden="true" />
         </Link>

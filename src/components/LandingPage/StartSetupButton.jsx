@@ -3,7 +3,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 const StartSetupButton = () => {
   return (
-    <Link className="landing-start-button" to="/setup">
+    <Link className="landing-start-button" to="/?stage=2">
       Start Setup
       <FiArrowRight aria-hidden="true" />
     </Link>
