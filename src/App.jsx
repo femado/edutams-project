@@ -6,6 +6,9 @@ import CreateClassArms from "./pages/CreateClassArms";
 import AddLearners from "./pages/AddLearners";
 import AddTeachers from "./pages/AddTeachers";
 import LastPage from "./pages/LastPage";
+import Landingpage from "./pages/Landingpage";
+import Managepage from "./pages/Managepage";
+import Setuppage from "./pages/Setuppage";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +21,8 @@ const router = createBrowserRouter([
   }
   ,
   {
-    path: "/confirm",
-    element: <Confirm />,
+    path: "/setup",
+    element: <Setuppage />,
   },
   {
     path: "/create-class-arms",
@@ -36,6 +39,8 @@ const router = createBrowserRouter([
   {
     path: "/last-page",
     element: <LastPage />,
+    path: "/manage",
+    element: <Managepage />,
   }
 ]);
 
