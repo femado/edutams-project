@@ -1,7 +1,8 @@
+import TopComponent from "../components/TopComponent"
 
 const Calender = () => {
   return (
-    <div>Calender</div>
+    <div><TopComponent />hello world</div>
   )
 }
 

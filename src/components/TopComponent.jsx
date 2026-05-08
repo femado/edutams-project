@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoMdLogOut } from "react-icons/io";
 
-
 const TopComponent = () => {
   return (
     <div>
