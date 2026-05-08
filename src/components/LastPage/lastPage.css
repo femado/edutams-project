@@ -69,10 +69,11 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 52px;
+  margin-top: 250px;
   background: #ffffff;
-  padding: 0 clamp(28px, 4vw, 52px);
+  padding: 0 clamp(10px, 2vw, 40px);
 }
 
 .last-message p {
@@ -110,7 +111,9 @@ button {
   .last-message {
     min-height: auto;
     padding: 64px 28px;
+    margin-top: 0;
   }
+
 }
 
 @media (max-width: 560px) {

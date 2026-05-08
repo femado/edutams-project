@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AddLearners from "./pages/AddLearners";
-import AddTeachers from "./pages/AddTeachers";
 import Calender from "./pages/Calender";
+import Landingpage from "./pages/Landingpage";
 import Confirm from "./pages/Confirm";
 import CreateClassArms from "./pages/CreateClassArms";
-import Landingpage from "./pages/Landingpage";
+import AddLearners from "./pages/AddLearners";
+import AddTeachers from "./pages/AddTeachers";
 import LastPage from "./pages/LastPage";
 
 const router = createBrowserRouter([
@@ -15,7 +15,8 @@ const router = createBrowserRouter([
   {
     path: "/calender",
     element: <Calender />,
-  },
+  }
+  ,
   {
     path: "/confirm",
     element: <Confirm />,
@@ -30,12 +31,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/add-teachers",
-    element: <AddTeachers />,
+    element: <AddTeachers />, 
   },
   {
     path: "/last-page",
     element: <LastPage />,
-  },
+  }
 ]);
 
 const App = () => {

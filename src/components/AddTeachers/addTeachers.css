@@ -75,6 +75,7 @@ button {
   inset: auto 0 0;
   width: 100%;
   opacity: 0.95;
+  top: 4rem;
 }
 
 .add-teachers-sidebar-school {
@@ -236,7 +237,7 @@ button {
 
 .teachers-table-scroll {
   max-height: 410px;
-  overflow-y: auto;
+  overflow: auto;
   padding-right: 12px;
 }
 
@@ -380,6 +381,84 @@ button {
 
   .teachers-table-card {
     overflow-x: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .teachers-table-card {
+    padding: 16px;
+  }
+
+  .teachers-table-card::after {
+    display: none;
+  }
+
+  .teachers-table-scroll {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .teachers-table {
+    min-width: 0;
+    border-spacing: 0;
+  }
+
+  .teachers-table,
+  .teachers-table thead,
+  .teachers-table tbody,
+  .teachers-table th,
+  .teachers-table td,
+  .teachers-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .teachers-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .teachers-table tbody {
+    display: grid;
+    gap: 12px;
+  }
+
+  .teachers-table tbody tr {
+    padding: 12px;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+
+  .teachers-table td {
+    min-height: 34px;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(92px, 36%) 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    text-align: right;
+    white-space: normal;
+  }
+
+  .teachers-table td + td {
+    border-top: 1px solid #eef1f7;
+  }
+
+  .teachers-table td::before {
+    content: attr(data-label);
+    color: #5d6370;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .teacher-action-button {
+    justify-self: end;
   }
 }
 

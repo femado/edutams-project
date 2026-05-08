@@ -79,12 +79,13 @@ button {
   inset: auto 0 0;
   width: 100%;
   opacity: 0.95;
+  top: 2.5rem;
 }
 
 .sidebar-calendar {
   position: absolute;
   left: 24%;
-  bottom: 16px;
+  bottom: 30px;
   width: 56%;
   filter: drop-shadow(0 16px 18px rgba(27, 45, 160, 0.2));
 }
@@ -516,10 +517,65 @@ button {
   }
 
   .week-table-wrap {
-    overflow-x: auto;
+    overflow: visible;
   }
 
-  .week-table {
-    min-width: 560px;
+  .week-table,
+  .week-table thead,
+  .week-table tbody,
+  .week-table tr,
+  .week-table th,
+  .week-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .week-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .week-table tbody {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .week-table tr {
+    border: 1px solid #d9dfeb;
+    border-radius: 6px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .week-table td {
+    height: auto;
+    min-height: 42px;
+    display: grid;
+    grid-template-columns: minmax(86px, 38%) 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    text-align: right;
+  }
+
+  .week-table td + td {
+    border-top: 1px solid #edf0f5;
+  }
+
+  .week-table td::before {
+    content: attr(data-label);
+    color: #30313a;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .week-table td:nth-child(2),
+  .week-table td:nth-child(3) {
+    text-align: right;
   }
 }

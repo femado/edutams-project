@@ -73,8 +73,10 @@ button {
 .add-learners-sidebar-circle {
   position: absolute;
   inset: auto 0 0;
-  width: 100%;
+  width: 80%;
   opacity: 0.95;
+  top: 6.9rem;
+  left: 4rem;
 }
 
 .add-learners-sidebar-child {
@@ -430,18 +432,98 @@ button {
   }
 
   .add-learners-panel {
-    overflow-x: auto;
+    overflow: visible;
   }
 
   .learner-class-list {
-    min-width: 720px;
-    padding-left: 0;
+    min-width: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .add-learners-main {
+    padding: 22px 16px 28px;
+  }
+
+  .add-learners-heading {
+    margin-bottom: 20px;
+  }
+
+  .add-learners-heading h1 {
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+
+  .add-learners-heading p {
+    font-size: 15px;
+  }
+
+  .add-learners-panel {
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .add-learners-panel::after {
+    display: none;
+  }
+
+  .learner-class-list {
+    max-height: none;
+    overflow: visible;
+    gap: 14px;
+  }
+
+  .learner-class-card {
+    min-height: auto;
+    grid-template-columns: auto 1fr;
+    gap: 14px 16px;
+    align-items: center;
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .learner-count {
+    width: 64px;
+    height: 52px;
+  }
+
+  .learner-count-block span {
+    font-size: 10px;
+  }
+
+  .learner-class-pill {
+    width: min(120px, 100%);
+    height: 34px;
+    justify-self: start;
+  }
+
+  .add-new-learner-button {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 40px;
+    font-size: 11px;
+  }
+
+  .template-actions {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .download-template-button,
+  .upload-template-button {
+    width: 100%;
+    height: 38px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 620px) {
   .add-learners-sidebar {
-    padding: 32px 20px 118px;
+    padding: 28px 20px 138px;
   }
 
   .add-learners-sidebar-copy h2 {
@@ -453,7 +535,20 @@ button {
   }
 
   .add-learners-sidebar-art {
-    width: 220px;
+    width: 230px;
+    right: 8px;
+    bottom: -36px;
+  }
+
+  .add-learners-sidebar-circle {
+    width: 86%;
+    top: 5.7rem;
+    left: 2.4rem;
+  }
+
+  .add-learners-sidebar-child {
+    left: 24%;
+    width: 60%;
   }
 
   .add-learners-navigation,
@@ -466,5 +561,67 @@ button {
   .add-learners-skip-button,
   .add-learners-save-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-learners-sidebar {
+    padding-bottom: 128px;
+  }
+
+  .add-learners-sidebar-copy {
+    max-width: 280px;
+  }
+
+  .add-learners-sidebar-copy h2 {
+    margin-bottom: 18px;
+    font-size: 25px;
+  }
+
+  .add-learners-sidebar-copy p {
+    max-width: 250px;
+    font-size: 13px;
+  }
+
+  .add-learners-top-bar {
+    min-width: 0;
+  }
+
+  .add-learners-help-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .add-learners-profile-guide {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .learner-class-card {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  .learner-count-block,
+  .learner-class-pill {
+    justify-self: center;
+  }
+
+  .template-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .add-learners-main {
+    padding-inline: 12px;
+  }
+
+  .add-learners-panel {
+    padding: 10px;
+  }
+
+  .learner-class-card {
+    padding: 12px;
   }
 }
