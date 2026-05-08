@@ -1,9 +1,8 @@
-import TopComponent from "../components/TopComponent"
+import CalendarLayout from "../components/calender/CalendarLayout";
+import "../components/calender/calender.css";
 
 const Calender = () => {
-  return (
-    <div><TopComponent />hello world</div>
-  )
-}
+  return <CalendarLayout />;
+};
 
-export default Calender
+export default Calender;
