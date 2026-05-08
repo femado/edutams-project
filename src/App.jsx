@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Calender from "./pages/Calender";
 import Landingpage from "./pages/Landingpage";
+import Managepage from "./pages/Managepage";
+import Setuppage from "./pages/Setuppage";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +12,14 @@ const router = createBrowserRouter([
   {
     path: "/calender",
     element: <Calender />,
+  },
+  {
+    path: "/setup",
+    element: <Setuppage />,
+  },
+  {
+    path: "/manage",
+    element: <Managepage />,
   }
 ]);
 
