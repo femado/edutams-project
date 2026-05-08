@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const DashboardButton = () => {
   return (
-    <button className="dashboard-button" type="button">
+    <Link className="dashboard-button" to="/?stage=1">
       Continue to Dashboard
-    </button>
+    </Link>
   );
 };
 

@@ -17,9 +17,9 @@ const WeekTable = () => {
         <tbody>
           {weeks.map((week) => (
             <tr key={week.name}>
-              <td>{week.name}</td>
-              <td>{week.date}</td>
-              <td>
+              <td data-label="Week">{week.name}</td>
+              <td data-label="Start on">{week.date}</td>
+              <td data-label="Holiday">
                 <span className="holiday-dot" aria-label={`${week.name} holiday marker`} />
               </td>
             </tr>
