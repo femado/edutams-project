@@ -1,11 +1,15 @@
-import React from 'react'
-import Leraners from './components/leraners'
-import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Calender from "./pages/Calender";
 
-export default function App() {
-  return (
-    <div>
-      <Leraners />
-    </div>
-  )
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Calender />,
+  },
+]);
+
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default App;
