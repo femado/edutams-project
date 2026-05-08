@@ -1,8 +1,9 @@
-import React from 'react'
+import Welcome from '../components/Welcome'
 
 const Landingpage = () => {
   return (
-    <div>Landingpage</div>
+    <div> <Welcome/> </div>
+    
   )
 }
 
