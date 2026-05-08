@@ -5,7 +5,8 @@ import Calender from "./pages/Calender";
 import Confirm from "./pages/Confirm";
 import CreateClassArms from "./pages/CreateClassArms";
 import Landingpage from "./pages/Landingpage";
-import LastPage from "./pages/LastPage";
+import Managepage from "./pages/Managepage";
+import Setuppage from "./pages/Setuppage";
 
 const router = createBrowserRouter([
   {
@@ -17,25 +18,13 @@ const router = createBrowserRouter([
     element: <Calender />,
   },
   {
-    path: "/confirm",
-    element: <Confirm />,
+    path: "/setup",
+    element: <Setuppage />,
   },
   {
-    path: "/create-class-arms",
-    element: <CreateClassArms />,
-  },
-  {
-    path: "/add-learners",
-    element: <AddLearners />,
-  },
-  {
-    path: "/add-teachers",
-    element: <AddTeachers />,
-  },
-  {
-    path: "/last-page",
-    element: <LastPage />,
-  },
+    path: "/manage",
+    element: <Managepage />,
+  }
 ]);
 
 const App = () => {
