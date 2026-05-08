@@ -1,8 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AddLearners from "./pages/AddLearners";
+import AddTeachers from "./pages/AddTeachers";
 import Calender from "./pages/Calender";
 import Confirm from "./pages/Confirm";
 import CreateClassArms from "./pages/CreateClassArms";
 import Landingpage from "./pages/Landingpage";
+import LastPage from "./pages/LastPage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,18 @@ const router = createBrowserRouter([
   {
     path: "/create-class-arms",
     element: <CreateClassArms />,
+  },
+  {
+    path: "/add-learners",
+    element: <AddLearners />,
+  },
+  {
+    path: "/add-teachers",
+    element: <AddTeachers />,
+  },
+  {
+    path: "/last-page",
+    element: <LastPage />,
   },
 ]);
 
