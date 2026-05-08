@@ -1,0 +1,392 @@
+:root {
+  color: #2e2f38;
+  background: #ffffff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.confirm-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(280px, 36%) 1fr;
+  background: #ffffff;
+  color: #33343f;
+}
+
+.confirm-sidebar {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: clamp(48px, 14vh, 220px) clamp(28px, 6vw, 78px) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.confirm-sidebar-copy {
+  max-width: 330px;
+  z-index: 1;
+  margin-bottom: clamp(84px, 18vh, 160px);
+}
+
+.confirm-sidebar-copy h2 {
+  margin: 0 0 28px;
+  color: #3449f5;
+  font-size: clamp(30px, 3vw, 41px);
+  line-height: 1.28;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.confirm-sidebar-copy p {
+  margin: 0;
+  color: #2944ff;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.confirm-sidebar-art {
+  position: absolute;
+  left: clamp(12px, 4vw, 48px);
+  bottom: -40px;
+  width: min(380px, 88%);
+  aspect-ratio: 1 / 0.74;
+}
+
+.confirm-sidebar-circle {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  opacity: 0.95;
+}
+
+.confirm-sidebar-school {
+  position: absolute;
+  left: 12%;
+  bottom: 12px;
+  width: 78%;
+  filter: drop-shadow(0 16px 18px rgba(27, 45, 160, 0.18));
+}
+
+.confirm-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fbff;
+  padding: 42px clamp(28px, 6vw, 96px) 34px;
+}
+
+.confirm-top-bar {
+  align-self: flex-end;
+  min-width: min(330px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.confirm-help-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  color: #545865;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.confirm-help-actions a,
+.confirm-heading a {
+  color: #3045fb;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.confirm-logout-button,
+.confirm-profile-guide,
+.confirm-tab,
+.confirm-back-button,
+.confirm-skip-button,
+.confirm-save-button {
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+}
+
+.confirm-logout-button {
+  color: #ff1e1e;
+  padding: 0;
+  font-size: 12px;
+}
+
+.confirm-logout-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.confirm-profile-guide {
+  height: 42px;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #ffffff;
+  color: #242733;
+  box-shadow: 0 4px 8px rgba(28, 39, 75, 0.14);
+  font-size: 13px;
+}
+
+.confirm-profile-icon {
+  color: #3349f6;
+  font-size: 22px;
+  display: inline-flex;
+}
+
+.confirm-content {
+  width: min(850px, 100%);
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.confirm-heading {
+  margin-bottom: 44px;
+}
+
+.confirm-heading h1 {
+  margin: 0 0 18px;
+  color: #66666d;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.confirm-heading p {
+  max-width: 490px;
+  margin: 0;
+  color: #686a72;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.confirm-card {
+  min-height: 384px;
+  border: 1.5px solid #425bff;
+  border-radius: 7px;
+  background: #f4f8ff;
+  padding: 38px 24px 34px;
+}
+
+.confirm-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 58px;
+}
+
+.confirm-tab {
+  height: 26px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #2458d8;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.confirm-tab svg {
+  width: 13px;
+  height: 13px;
+  color: #ffffff;
+}
+
+.confirm-input-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 14px 22px;
+  background: #f1fffc;
+}
+
+.confirm-input-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.confirm-input-row input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #d5dbe5;
+  background: #ffffff;
+  padding: 0 9px;
+  color: #2e3038;
+  font-size: 10px;
+  outline: 0;
+}
+
+.confirm-input-row input::placeholder {
+  color: #252a35;
+}
+
+.confirm-navigation {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.confirm-back-button,
+.confirm-skip-button,
+.confirm-save-button {
+  min-height: 42px;
+  border-radius: 2px;
+  color: #3044f5;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.confirm-back-button {
+  padding: 0 18px;
+  background: #ffffff;
+}
+
+.confirm-forward-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.confirm-skip-button {
+  min-width: 98px;
+  padding: 0 22px;
+  background: #f0ecff;
+  color: #9d8cff;
+}
+
+.confirm-save-button {
+  padding: 0 18px;
+  background: #ffffff;
+}
+
+@media (max-width: 980px) {
+  .confirm-page {
+    grid-template-columns: 1fr;
+  }
+
+  .confirm-sidebar {
+    min-height: auto;
+    padding: 40px 28px 130px;
+  }
+
+  .confirm-sidebar-copy {
+    margin-bottom: 20px;
+  }
+
+  .confirm-sidebar-art {
+    width: 260px;
+    left: auto;
+    right: 18px;
+    bottom: -28px;
+  }
+
+  .confirm-main {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .confirm-top-bar {
+    align-self: stretch;
+    margin-bottom: 22px;
+  }
+
+  .confirm-content {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .confirm-heading {
+    margin-bottom: 28px;
+  }
+
+  .confirm-card {
+    min-height: auto;
+    padding: 24px 18px;
+  }
+
+  .confirm-tabs {
+    margin-bottom: 28px;
+  }
+
+  .confirm-input-panel {
+    gap: 18px;
+  }
+
+  .confirm-input-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .confirm-sidebar {
+    padding: 32px 20px 118px;
+  }
+
+  .confirm-sidebar-copy h2 {
+    font-size: 28px;
+  }
+
+  .confirm-sidebar-copy p {
+    font-size: 14px;
+  }
+
+  .confirm-sidebar-art {
+    width: 220px;
+  }
+
+  .confirm-input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .confirm-navigation,
+  .confirm-forward-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .confirm-back-button,
+  .confirm-skip-button,
+  .confirm-save-button {
+    width: 100%;
+  }
+}

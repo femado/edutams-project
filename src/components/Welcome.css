@@ -1,0 +1,188 @@
+.welcome-section {
+  background: linear-gradient(135deg, #5b5bff 0%, #6b7eff 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  gap: 60px;
+}
+
+.welcome-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+}
+
+.welcome-text {
+  color: white;
+}
+
+.welcome-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.school-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffa500;
+  margin: 0 0 25px 0;
+  letter-spacing: 0.3px;
+}
+
+.welcome-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.welcome-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 450px;
+}
+
+.welcome-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.powered-by {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+}
+
+.edutams-logo {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.welcome-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 3/4;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.students-illustration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.students-illustration svg {
+  width: 80%;
+  height: 80%;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .welcome-heading {
+    font-size: 36px;
+  }
+
+  .welcome-description {
+    font-size: 15px;
+  }
+
+  .image-placeholder {
+    max-width: 300px;
+  }
+
+  .welcome-section {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-heading {
+    font-size: 28px;
+  }
+
+  .school-name {
+    font-size: 16px;
+  }
+
+  .welcome-label {
+    font-size: 14px;
+  }
+
+  .welcome-description {
+    font-size: 14px;
+  }
+
+  .image-placeholder {
+    max-width: 250px;
+  }
+
+  .welcome-container {
+    gap: 30px;
+  }
+}
