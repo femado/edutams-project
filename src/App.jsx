@@ -1,11 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Calender from "./pages/Calender";
+import Landingpage from "./pages/Landingpage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Calender />,
+    element: <Landingpage />,
   },
+  {
+    path: "/calender",
+    element: <Calender />,
+  }
 ]);
 
 const App = () => {
