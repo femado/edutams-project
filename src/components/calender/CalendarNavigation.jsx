@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 const CalendarNavigation = () => {
   return (
     <nav className="calendar-navigation" aria-label="Calendar setup navigation">
-      <button className="back-button" type="button">
+      <Link className="back-button" to="/?stage=3">
         <IoArrowBack aria-hidden="true" />
         Back
-      </button>
+      </Link>
 
       <div className="forward-actions">
-        <button className="skip-button" type="button">Skip</button>
-        <button className="save-button" type="button">
+        <Link className="skip-button" to="/?stage=5">Skip</Link>
+        <Link className="save-button" to="/?stage=5">
           Save & Continue
           <IoArrowForward aria-hidden="true" />
-        </button>
+        </Link>
       </div>
     </nav>
   );

@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 const AddLearnersNavigation = () => {
   return (
     <nav className="add-learners-navigation" aria-label="Add learners setup navigation">
-      <button className="add-learners-back-button" type="button">
+      <Link className="add-learners-back-button" to="/?stage=6">
         <IoArrowBack aria-hidden="true" />
         Back
-      </button>
+      </Link>
 
       <div className="add-learners-forward-actions">
-        <button className="add-learners-skip-button" type="button">Skip</button>
-        <button className="add-learners-save-button" type="button">
+        <Link className="add-learners-skip-button" to="/?stage=8">Skip</Link>
+        <Link className="add-learners-save-button" to="/?stage=8">
           Save & Continue
           <IoArrowForward aria-hidden="true" />
-        </button>
+        </Link>
       </div>
     </nav>
   );

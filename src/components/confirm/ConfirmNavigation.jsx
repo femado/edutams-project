@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 const ConfirmNavigation = () => {
   return (
     <nav className="confirm-navigation" aria-label="Confirm setup navigation">
-      <button className="confirm-back-button" type="button">
+      <Link className="confirm-back-button" to="/?stage=4">
         <IoArrowBack aria-hidden="true" />
         Back
-      </button>
+      </Link>
 
       <div className="confirm-forward-actions">
-        <button className="confirm-skip-button" type="button">Skip</button>
-        <button className="confirm-save-button" type="button">
+        <Link className="confirm-skip-button" to="/?stage=6">Skip</Link>
+        <Link className="confirm-save-button" to="/?stage=6">
           Save & Continue
           <IoArrowForward aria-hidden="true" />
-        </button>
+        </Link>
       </div>
     </nav>
   );

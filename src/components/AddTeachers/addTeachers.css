@@ -318,6 +318,7 @@ button {
   color: #3044f5;
   font-size: 16px;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .add-teachers-back-button {

@@ -1,19 +1,20 @@
+import { Link } from "react-router-dom";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 
 const ClassArmsNavigation = () => {
   return (
     <nav className="class-arms-navigation" aria-label="Class arms setup navigation">
-      <button className="class-arms-back-button" type="button">
+      <Link className="class-arms-back-button" to="/?stage=5">
         <IoArrowBack aria-hidden="true" />
         Back
-      </button>
+      </Link>
 
       <div className="class-arms-forward-actions">
-        <button className="class-arms-skip-button" type="button">Skip</button>
-        <button className="class-arms-save-button" type="button">
+        <Link className="class-arms-skip-button" to="/?stage=7">Skip</Link>
+        <Link className="class-arms-save-button" to="/?stage=7">
           Save & Continue
           <IoArrowForward aria-hidden="true" />
-        </button>
+        </Link>
       </div>
     </nav>
   );
