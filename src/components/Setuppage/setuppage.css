@@ -29,7 +29,7 @@ button {
 .setup-page {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 354px minmax(0, 1fr);
+  grid-template-columns: 343px minmax(0, 1fr);
   background: #f4f5f7;
   color: #11131a;
 }
@@ -38,7 +38,7 @@ button {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  padding: clamp(88px, 17vh, 250px) 50px 20px;
+  padding: clamp(178px, 32.9vh, 236px) 49px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,14 +47,16 @@ button {
 }
 
 .setup-sidebar-copy {
-  max-width: 260px;
+  max-width: 262px;
+  
+  
 }
 
 .setup-sidebar-copy h1 {
-  margin: 0 0 24px;
+  margin: 0 0 15px;
   color: #ffffff;
-  font-size: clamp(30px, 3vw, 34px);
-  line-height: 1.34;
+  font-size: 26px;
+  line-height: 1.42;
   letter-spacing: 0;
   font-weight: 800;
 }
@@ -62,42 +64,43 @@ button {
 .setup-sidebar-copy p {
   margin: 0;
   color: #ffffff;
-  font-size: 15px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.18;
   font-weight: 600;
+  max-width: 260px;
 }
 
 .setup-sidebar-art {
   position: absolute;
-  left: 28px;
-  bottom: -5px;
-  width: min(250px, 86%);
+  left: 27px;
+  bottom: 0;
+  width: min(256px, 86%);
   height: auto;
 }
 
 .setup-main {
   position: relative;
   min-height: 100vh;
-  padding: 24px 36px 38px;
+  padding: 17px 31px 38px 18px;
   display: flex;
   flex-direction: column;
   background: #f4f5f7;
 }
 
 .setup-help {
-  width: min(294px, 100%);
+  width: min(225px, 100%);
   margin-left: auto;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .setup-help-actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 9px;
+  gap: 12px;
+  margin-bottom: 8px;
   color: #454955;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -117,52 +120,52 @@ button {
 }
 
 .setup-logout {
-  gap: 5px;
+  gap: 4px;
   padding: 0;
   color: #ff2020;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
 }
 
 .setup-logout svg {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .setup-profile-guide {
   width: 100%;
-  min-height: 38px;
+  min-height: 32px;
   justify-content: space-between;
-  gap: 11px;
-  padding: 0 13px 0 18px;
+  gap: 10px;
+  padding: 0 11px 0 16px;
   background: #ffffff;
   color: #1f2330;
   box-shadow: 0 3px 7px rgba(18, 24, 40, 0.2);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
 }
 
 .setup-video-icon {
   display: inline-flex;
   color: #3543ee;
-  font-size: 21px;
+  font-size: 20px;
   flex: 0 0 auto;
 }
 
 .setup-content {
-  width: min(585px, 100%);
-  margin-left: clamp(32px, 10vw, 170px);
+  width: min(560px, 100%);
+  margin-left: clamp(42px, 9.4vw, 109px);
   margin-bottom: 2rem;
 }
 
 .setup-heading {
-  margin-bottom: 38px;
+  margin-bottom: 36px;
 }
 
 .setup-heading h2 {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   color: #66666d;
-  font-size: clamp(28px, 3vw, 34px);
+  font-size: 28px;
   line-height: 1;
   letter-spacing: 0;
   font-weight: 800;
@@ -172,7 +175,7 @@ button {
   width: min(470px, 100%);
   margin: 0;
   color: #686a72;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.08;
   font-weight: 500;
 }
@@ -185,22 +188,22 @@ button {
 
 .setup-form {
   display: grid;
-  grid-template-columns: 176px minmax(260px, 340px);
-  gap: 72px;
+  grid-template-columns: 168px minmax(260px, 324px);
+  gap: 66px;
   align-items: start;
 }
 
 .setup-logo-card {
-  width: 176px;
-  height: 210px;
-  padding: 31px 22px 14px;
+  width: 168px;
+  height: 202px;
+  padding: 31px 22px 10px;
   border: 1.5px solid #bcc9ff;
   border-radius: 6px;
   background: #f8faff;
 }
 
 .setup-logo-preview {
-  height: 126px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,15 +213,15 @@ button {
 }
 
 .setup-logo-preview svg {
-  width: 72px;
-  height: 72px;
+  width: 70px;
+  height: 70px;
   stroke-width: 1.2;
   fill: #cecece;
 }
 
 .setup-browse-button {
   width: 100%;
-  min-height: 34px;
+  min-height: 31px;
   margin-top: 11px;
   display: inline-flex;
   align-items: center;
@@ -226,7 +229,7 @@ button {
   gap: 10px;
   border: 0;
   color: #11131a;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -255,7 +258,7 @@ button {
 .setup-fields {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
 }
 
 .setup-fields label {
@@ -281,12 +284,12 @@ button {
 }
 
 .setup-fields input {
-  height: 36px;
+  height: 34px;
   padding: 0 12px;
 }
 
 .setup-fields textarea {
-  min-height: 64px;
+  min-height: 61px;
   padding: 12px;
   resize: vertical;
 }
@@ -307,7 +310,7 @@ button {
 .setup-forward-actions {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 12px;
 }
 
 .setup-back-button,
@@ -326,19 +329,19 @@ button {
 }
 
 .setup-back-button {
-  min-width: 92px;
+  min-width: 89px;
   background: #ffffff;
 }
 
 .setup-skip-button {
-  min-width: 90px;
+  min-width: 84px;
   padding: 0 21px;
   background: #f0edff;
   color: #8f84ff;
 }
 
 .setup-save-button {
-  min-width: 176px;
+  min-width: 170px;
   padding: 0 18px;
   background: #ffffff;
 }

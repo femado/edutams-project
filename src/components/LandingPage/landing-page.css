@@ -94,7 +94,7 @@ button {
 }
 
 .landing-subtitle {
-  max-width: 470px;
+  max-width: 450px;
   color: #ffffff;
   font-size: clamp(14px, 1.35vw, 17px);
   line-height: 1.2;
@@ -223,77 +223,32 @@ button {
   z-index: 4;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   color: #ffffff;
   font-size: 9px;
   line-height: 1;
   width: fit-content;
 }
 
+.landing-powered-label {
+  flex: 0 0 auto;
+  font-size: 8px;
+  font-weight: 500;
+}
+
 .landing-brand {
   display: flex;
   align-items: center;
-  gap: 5px;
+  height: 24px;
 }
 
-.landing-brand-icon {
-  position: relative;
-  width: 40px;
-  height: 22px;
-  display: inline-block;
-}
-
-.landing-brand-icon::before,
-.landing-brand-icon::after,
-.landing-brand-icon span {
-  content: "";
-  position: absolute;
-  border: 2px solid #ffffff;
-  border-radius: 999px;
-}
-
-.landing-brand-icon::before {
-  left: 1px;
-  bottom: 2px;
-  width: 25px;
-  height: 14px;
-  border-right: 0;
-}
-
-.landing-brand-icon::after {
-  right: 1px;
-  bottom: 1px;
-  width: 24px;
-  height: 16px;
-  border-left: 0;
-}
-
-.landing-brand-icon span {
-  left: 15px;
-  top: 0;
-  width: 13px;
-  height: 13px;
-  border-bottom: 0;
-}
-
-.landing-brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  text-transform: none;
-}
-
-.landing-brand-text strong {
-  font-size: 12px;
-  line-height: 1;
-  font-weight: 800;
-}
-
-.landing-brand-text small {
-  font-size: 3.5px;
-  line-height: 1;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+.landing-powered-logo {
+  display: block;
+  width: 86px;
+  max-width: 22vw;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .landing-start-button {

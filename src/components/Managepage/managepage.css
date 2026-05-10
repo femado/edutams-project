@@ -27,7 +27,7 @@ button {
 .manage-page {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: clamp(300px, 30vw, 358px) minmax(0, 1fr);
+  grid-template-columns: 350px minmax(0, 1fr);
   background: #f5f8fc;
   color: #171a23;
 }
@@ -36,7 +36,7 @@ button {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  padding: clamp(96px, 28vh, 250px) clamp(32px, 4.2vw, 52px) 0;
+  padding: clamp(236px, 33.6vh, 242px) 50px 0 58px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,16 +44,16 @@ button {
 }
 
 .manage-sidebar-copy {
-  max-width: 270px;
+  max-width: 265px;
   position: relative;
   z-index: 2;
 }
 
 .manage-sidebar-copy h1 {
-  margin: 0 0 25px;
+  margin: 0 0 24px;
   color: #3547ee;
-  font-size: clamp(29px, 3vw, 34px);
-  line-height: 1.34;
+  font-size: 25px;
+  line-height: 1.42;
   letter-spacing: 0;
   font-weight: 800;
 }
@@ -61,51 +61,52 @@ button {
 .manage-sidebar-copy p {
   margin: 0;
   color: #2547ff;
-  font-size: 15px;
-  line-height: 1.1;
+  max-width: 260px;
+  font-size: 14px;
+  line-height: 1.18;
   font-weight: 600;
 }
 
 .manage-sidebar-art-wrap {
   position: absolute;
-  left: clamp(8px, 1.2vw, 16px);
-  bottom: -100px;
-  width: min(320px, 92%);
-  height: 250px;
+  left: 38px;
+  bottom: -154px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: #d9ddff;
 }
 
 .manage-sidebar-art {
   position: absolute;
-  left: 5%;
-  bottom: 72px;
-  width: min(286px, 90%);
+  left: 15px;
+  bottom: 111px;
+  width: 254px;
   height: auto;
 }
 
 .manage-main {
   min-height: 100vh;
-  padding: 40px clamp(24px, 3.4vw, 42px) 35px clamp(34px, 5vw, 70px);
+  padding: 45px 28px 31px 24px;
   display: flex;
   flex-direction: column;
   background: #f5f8fc;
 }
 
 .manage-help {
-  width: min(294px, 100%);
+  width: min(225px, 100%);
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
 }
 
 .manage-help-actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 9px;
+  gap: 12px;
+  margin-bottom: 8px;
   color: #454955;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -125,51 +126,52 @@ button {
 }
 
 .manage-logout {
-  gap: 5px;
+  gap: 4px;
   padding: 0;
   color: #ff2020;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
 }
 
 .manage-logout svg {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
 }
 
 .manage-profile-guide {
   width: 100%;
-  min-height: 38px;
+  min-height: 32px;
   justify-content: space-between;
-  gap: 11px;
-  padding: 0 13px 0 18px;
+  gap: 10px;
+  padding: 0 11px 0 16px;
   background: #ffffff;
   color: #1f2330;
   box-shadow: 0 3px 7px rgba(18, 24, 40, 0.2);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
 }
 
 .manage-video-icon {
   display: inline-flex;
   color: #3543ee;
-  font-size: 21px;
+  font-size: 20px;
   flex: 0 0 auto;
 }
 
 .manage-content {
-  width: min(684px, 100%);
+  width: min(652px, 100%);
+  margin-left: 42px;
   margin-right: auto;
 }
 
 .manage-heading {
-  margin-bottom: 52px;
+  margin-bottom: 48px;
 }
 
 .manage-heading h2 {
-  margin: 0 0 22px;
+  margin: 0 0 18px;
   color: #62636a;
-  font-size: clamp(29px, 3vw, 34px);
+  font-size: 28px;
   line-height: 1;
   letter-spacing: 0;
   font-weight: 800;
@@ -178,7 +180,7 @@ button {
 .manage-heading p {
   margin: 0;
   color: #696c75;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -187,7 +189,7 @@ button {
   border: 1.5px solid #6d7bff;
   border-radius: 8px;
   background: #f8fbff;
-  padding: clamp(20px, 2.4vw, 27px) clamp(14px, 2vw, 23px) clamp(24px, 3.2vw, 38px);
+  padding: 28px 27px 37px 22px;
   margin-bottom: 2rem;
 }
 
@@ -221,8 +223,8 @@ button {
 .manage-card-menu {
   width: 24px;
   height: 24px;
-  margin-right: -18px;
-  margin-top: -19px;
+  margin-right: -22px;
+  margin-top: -24px;
   font-size: 17px;
 }
 
@@ -240,18 +242,18 @@ button {
 }
 
 .manage-table th {
-  height: 54px;
+  height: 50px;
   background: #edf3fc;
   color: #2f313a;
   text-align: left;
-  font-size: clamp(15px, 1.6vw, 18px);
+  font-size: 17px;
   line-height: 1;
   font-weight: 500;
 }
 
 .manage-table th,
 .manage-table td {
-  padding: 0 clamp(14px, 2vw, 26px);
+  padding: 0 24px;
 }
 
 .manage-table th:nth-child(1),
@@ -271,16 +273,16 @@ button {
 }
 
 .manage-table td {
-  height: 51px;
+  height: 48px;
   border-top: 1px solid #d8dde5;
   color: #55575f;
-  font-size: clamp(13px, 1.35vw, 15px);
+  font-size: 14px;
   font-weight: 500;
 }
 
 .manage-status {
-  min-width: min(156px, 100%);
-  min-height: 35px;
+  min-width: 149px;
+  min-height: 34px;
   padding: 0 12px;
   display: inline-flex;
   align-items: center;
@@ -288,9 +290,9 @@ button {
   border-radius: 6px;
   background: #e9c271;
   color: #000000;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .manage-row-action {
@@ -312,7 +314,7 @@ button {
 .manage-forward-actions {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 12px;
 }
 
 .manage-back-button,
@@ -343,14 +345,14 @@ button {
 }
 
 .manage-skip-button {
-  min-width: 90px;
+  min-width: 84px;
   padding: 0 21px;
   background: #f0edff;
   color: #8f84ff;
 }
 
 .manage-save-button {
-  min-width: 176px;
+  min-width: 170px;
   padding: 0 18px;
   background: #ffffff;
 }

@@ -1,16 +1,11 @@
+import edutamsLogo from "../../assets/images/image.png";
+
 const PoweredBy = () => {
   return (
     <div className="landing-powered">
-      <span>Powered by</span>
+      <span className="landing-powered-label">Powered by</span>
       <div className="landing-brand">
-        <img src="" alt="" />
-        {/* <span className="landing-brand-icon" aria-hidden="true">
-          <span />
-        </span> */}
-        <div className="landing-brand-text">
-          <strong>EduTAMS</strong>
-          <small>...digitizing schooling</small>
-        </div>
+        <img className="landing-powered-logo" src={edutamsLogo} alt="EduTAMS" />
       </div>
     </div>
   );

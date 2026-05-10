@@ -7,8 +7,8 @@ const SetupForm = () => {
       <header className="setup-heading">
         <h2>Set Up Your School Profile</h2>
         <p>
-          Upload your school logo and Check your school details , if the details
-          is incorrect click here <a href="#help">(Get Help)</a> to make
+          Upload your school logo and Check your school details,
+          if the details is incorrect click here <a href="#help">(Get Help)</a> to make
           complaint
         </p>
       </header>
