@@ -85,7 +85,7 @@ button {
 .class-arms-sidebar-school {
   position: absolute;
   left: 12%;
-  bottom: 12px;
+  bottom: 30px;
   width: 78%;
   filter: drop-shadow(0 16px 18px rgba(27, 45, 160, 0.18));
 }
@@ -325,6 +325,7 @@ button {
   color: #3044f5;
   font-size: 16px;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .class-arms-back-button {
@@ -403,12 +404,41 @@ button {
   }
 
   .class-arms-card {
-    overflow-x: auto;
+    overflow: visible;
   }
 
   .class-arms-card-header,
   .class-arm-row {
-    min-width: 720px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .class-arms-card {
+    padding: 16px;
+  }
+
+  .class-arms-card-header {
+    display: none;
+  }
+
+  .class-arms-list {
+    gap: 14px;
+  }
+
+  .class-arm-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .class-name-pill,
+  .generate-arm-control {
+    width: 100%;
+  }
+
+  .arm-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -439,5 +469,11 @@ button {
   .class-arms-skip-button,
   .class-arms-save-button {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .arm-buttons {
+    grid-template-columns: 1fr;
   }
 }

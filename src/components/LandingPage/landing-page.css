@@ -1,0 +1,505 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #1f2430;
+  background: #f4f5f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(520px, 67.5%) minmax(280px, 32.5%);
+  background: #f4f5f7;
+}
+
+.landing-blue-panel {
+  position: relative;
+  min-height: 100vh;
+  padding: clamp(72px, 15vh, 156px) 48px 58px clamp(46px, 6.7vw, 86px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3745ec;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.landing-light-panel {
+  min-height: 100vh;
+  padding: 34px clamp(18px, 3vw, 42px);
+  background: #f3f4f6;
+  z-index: 2;
+}
+
+.landing-copy {
+  width: min(470px, 100%);
+  position: relative;
+  z-index: 4;
+}
+
+.landing-welcome,
+.landing-school-name,
+.landing-subtitle {
+  margin: 0;
+}
+
+.landing-subtitle {
+  max-width: 25rem;
+}
+
+.landing-welcome {
+  font-size: clamp(18px, 1.7vw, 22px);
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.landing-school-name {
+  margin-top: 5px;
+  color: #ffdf00;
+  font-size: clamp(16px, 1.7vw, 21px);
+  line-height: 1.2;
+  /* font-weight: 500; */
+}
+
+.landing-copy h1 {
+  margin: 20px 0 16px;
+  /* max-width: 430px; */
+  color: #ffffff;
+  font-size: clamp(34px, 3.7vw, 43px);
+  line-height: 1.27;
+  letter-spacing: 0;
+  font-weight: 800;
+
+}
+
+.landing-subtitle {
+  max-width: 470px;
+  color: #ffffff;
+  font-size: clamp(14px, 1.35vw, 17px);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.landing-help {
+  width: min(264px, 100%);
+  margin-left: auto;
+}
+
+.landing-help-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 9px;
+  color: #545864;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.landing-help-actions a {
+  color: #3045f7;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.landing-logout,
+.landing-profile-guide {
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.landing-logout {
+  gap: 5px;
+  padding: 0;
+  color: #ff2222;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.landing-logout svg {
+  width: 15px;
+  height: 15px;
+}
+
+.landing-profile-guide {
+  width: 100%;
+  min-height: 38px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 12px 0 17px;
+  background: #ffffff;
+  color: #252935;
+  box-shadow: 0 3px 7px rgba(18, 24, 40, 0.2);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.landing-video-icon {
+  display: inline-flex;
+  color: #3543ee;
+  font-size: 21px;
+  flex: 0 0 auto;
+}
+
+.landing-guide-arrow {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  color: #11131a;
+}
+
+.landing-students {
+  position: absolute;
+  right: clamp(92px, 14vw, 182px);
+  bottom: 0;
+  width: clamp(430px, 52vw, 610px);
+  height: clamp(365px, 76vh, 505px);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.landing-white-arc {
+  position: absolute;
+  left: -10px;
+  bottom: -220px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: #f4f5f7;
+  z-index: 0;
+}
+
+.landing-boy,
+.landing-girl {
+  position: absolute;
+  display: block;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: none;
+  z-index: 2;
+}
+
+.landing-boy {
+  left: 0;
+  bottom: -26px;
+  width: clamp(300px, 34vw, 400px);
+
+}
+
+.landing-girl {
+  right: clamp(24px, 6vw, 80px);
+  bottom: -8px;
+  width: clamp(270px, 30vw, 340px); 
+  /* height: 300rem; */
+  z-index: 3;
+}
+
+.landing-powered {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 1;
+  width: fit-content;
+}
+
+.landing-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.landing-brand-icon {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  display: inline-block;
+}
+
+.landing-brand-icon::before,
+.landing-brand-icon::after,
+.landing-brand-icon span {
+  content: "";
+  position: absolute;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+}
+
+.landing-brand-icon::before {
+  left: 1px;
+  bottom: 2px;
+  width: 25px;
+  height: 14px;
+  border-right: 0;
+}
+
+.landing-brand-icon::after {
+  right: 1px;
+  bottom: 1px;
+  width: 24px;
+  height: 16px;
+  border-left: 0;
+}
+
+.landing-brand-icon span {
+  left: 15px;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 0;
+}
+
+.landing-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-transform: none;
+}
+
+.landing-brand-text strong {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.landing-brand-text small {
+  font-size: 3.5px;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.landing-start-button {
+  position: absolute;
+  right: 26px;
+  bottom: 53px;
+  min-width: 139px;
+  height: 42px;
+  padding: 0 15px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #ffffff;
+  color: #3145ee;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.landing-start-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1080px) {
+  .landing-page {
+    grid-template-columns: minmax(0, 64%) minmax(260px, 36%);
+  }
+
+  .landing-blue-panel {
+    padding-right: 34px;
+  }
+
+  .landing-copy {
+    width: min(410px, 100%);
+  }
+
+  .landing-copy h1 {
+    font-size: clamp(31px, 3.7vw, 38px);
+  }
+
+  .landing-students {
+    right: clamp(70px, 10vw, 110px);
+    width: clamp(390px, 50vw, 510px);
+  }
+
+  .landing-white-arc {
+    width: 430px;
+    height: 430px;
+  }
+}
+
+@media (max-width: 820px) {
+  .landing-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #3745ec;
+    overflow: hidden;
+  }
+
+  .landing-blue-panel,
+  .landing-light-panel {
+    min-height: auto;
+  }
+
+  .landing-blue-panel {
+    flex: 1;
+    min-height: calc(100vh - 92px);
+    padding: 50px 24px 300px;
+  }
+
+  .landing-light-panel {
+    order: -1;
+    padding: 18px 20px;
+    background: #f3f4f6;
+  }
+
+  .landing-help {
+    width: min(300px, 100%);
+  }
+
+  .landing-students {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: min(560px, 100vw);
+    height: 350px;
+  }
+
+  .landing-white-arc {
+    left: 50%;
+    bottom: -190px;
+    transform: translateX(-50%);
+    width: 460px;
+    height: 460px;
+  }
+
+  .landing-boy {
+    left: max(10px, 5vw);
+    width: clamp(240px, 45vw, 300px);
+  }
+
+  .landing-girl {
+    right: max(10px, 5vw);
+    width: clamp(250px, 48vw, 330px);
+  }
+
+  .landing-start-button {
+    right: 20px;
+    bottom: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .landing-blue-panel {
+    min-height: calc(100vh - 118px);
+    padding: 38px 20px 300px;
+  }
+
+  .landing-light-panel {
+    padding: 16px;
+  }
+
+  .landing-copy h1 {
+    max-width: 360px;
+    font-size: 31px;
+    line-height: 1.22;
+  }
+
+  .landing-help {
+    margin: 0;
+    width: 100%;
+  }
+
+  .landing-help-actions {
+    white-space: normal;
+  }
+
+  .landing-profile-guide {
+    min-height: 42px;
+  }
+
+  .landing-students {
+    height: 315px;
+  }
+
+  .landing-white-arc {
+    bottom: -170px;
+    width: 390px;
+    height: 390px;
+  }
+
+  .landing-boy {
+    left: -28px;
+    width: 260px;
+  }
+
+  .landing-girl {
+    right: 1.3rem;
+    width: 230px;
+  }
+
+  .landing-powered {
+    margin-bottom: 12px;
+    display: none;
+  }
+
+  .landing-start-button {
+    left: 20px;
+    right: auto;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .landing-blue-panel {
+    padding-bottom: 270px;
+  }
+
+  .landing-copy h1 {
+    font-size: 28px;
+  }
+
+  .landing-school-name,
+  .landing-subtitle {
+    font-size: 13px;
+  }
+
+  .landing-students {
+    height: 280px;
+  }
+
+  .landing-white-arc {
+    width: 330px;
+    height: 330px;
+    bottom: -145px;
+  }
+
+  .landing-boy {
+    width: 225px;
+  }
+
+  .landing-girl {
+    width: 248px;
+  }
+}
