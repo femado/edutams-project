@@ -1,0 +1,470 @@
+:root {
+  color: #2e2f38;
+  background: #ffffff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.add-learners-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(280px, 36%) 1fr;
+  background: #ffffff;
+  color: #33343f;
+}
+
+.add-learners-sidebar {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: clamp(48px, 14vh, 220px) clamp(28px, 6vw, 78px) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.add-learners-sidebar-copy {
+  max-width: 350px;
+  z-index: 1;
+  margin-bottom: clamp(76px, 16vh, 145px);
+}
+
+.add-learners-sidebar-copy h2 {
+  margin: 0 0 30px;
+  color: #3449f5;
+  font-size: clamp(30px, 3vw, 41px);
+  line-height: 1.28;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.add-learners-sidebar-copy p {
+  margin: 0;
+  color: #2944ff;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.add-learners-sidebar-art {
+  position: absolute;
+  left: clamp(6px, 3vw, 32px);
+  bottom: -28px;
+  width: min(390px, 94%);
+  aspect-ratio: 1 / 0.78;
+}
+
+.add-learners-sidebar-circle {
+  position: absolute;
+  inset: auto 0 0;
+  width: 100%;
+  opacity: 0.95;
+}
+
+.add-learners-sidebar-child {
+  position: absolute;
+  left: 28%;
+  bottom: 0;
+  width: 56%;
+  filter: drop-shadow(0 16px 18px rgba(27, 45, 160, 0.16));
+}
+
+.add-learners-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fbff;
+  padding: 42px clamp(24px, 5vw, 82px) 34px;
+}
+
+.add-learners-top-bar {
+  align-self: flex-end;
+  min-width: min(330px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.add-learners-help-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  color: #545865;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.add-learners-help-actions a {
+  color: #3045fb;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.add-learners-logout-button,
+.add-learners-profile-guide,
+.learner-class-pill,
+.add-new-learner-button,
+.download-template-button,
+.upload-template-button,
+.add-learners-back-button,
+.add-learners-skip-button,
+.add-learners-save-button {
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+}
+
+.add-learners-logout-button {
+  color: #ff1e1e;
+  padding: 0;
+  font-size: 12px;
+}
+
+.add-learners-logout-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.add-learners-profile-guide {
+  height: 42px;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #ffffff;
+  color: #242733;
+  box-shadow: 0 4px 8px rgba(28, 39, 75, 0.14);
+  font-size: 13px;
+}
+
+.add-learners-profile-icon {
+  color: #3349f6;
+  font-size: 22px;
+  display: inline-flex;
+}
+
+.add-learners-content {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.add-learners-heading {
+  margin-bottom: 40px;
+}
+
+.add-learners-heading h1 {
+  margin: 0 0 24px;
+  color: #66666d;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.add-learners-heading p {
+  margin: 0;
+  color: #686a72;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: 500;
+}
+
+.add-learners-panel {
+  position: relative;
+  border: 1.5px solid #425bff;
+  border-radius: 7px;
+  background: #f4f8ff;
+  padding: 36px 30px 10px;
+}
+
+.add-learners-panel::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 1px;
+  height: calc(100% - 42px);
+  background: #cfd5df;
+}
+
+.learner-class-list {
+  max-height: 430px;
+  overflow-y: auto;
+  padding: 0 28px 0 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.learner-class-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.learner-class-list::-webkit-scrollbar-thumb {
+  background: #b8bcc7;
+  border-radius: 999px;
+}
+
+.learner-class-card {
+  min-height: 86px;
+  display: grid;
+  grid-template-columns: 86px 110px 1fr 158px;
+  align-items: center;
+  gap: 26px;
+  padding: 10px 38px;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 8px 10px rgba(28, 39, 75, 0.12);
+}
+
+.learner-class-card.is-active {
+  border: 1.5px solid #3349ff;
+  background: #e8f4ff;
+  box-shadow: none;
+}
+
+.learner-count-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.learner-count {
+  width: 70px;
+  height: 58px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  background: #e9f2ff;
+  color: #153cff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.is-active .learner-count {
+  background: #3045e9;
+  color: #ffffff;
+}
+
+.learner-count-block span {
+  color: #6b7080;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.learner-class-pill {
+  width: 82px;
+  height: 32px;
+  border-radius: 999px;
+  background: #eef4fb;
+  color: #58606f;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.add-new-learner-button {
+  justify-self: center;
+  min-width: 122px;
+  height: 34px;
+  border-radius: 999px;
+  padding: 0 16px;
+  background: #8c90a9;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.is-active .add-new-learner-button {
+  background: #6b5fe7;
+}
+
+.add-new-learner-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.template-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.download-template-button,
+.upload-template-button {
+  width: 154px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.download-template-button {
+  border: 1px solid #e3e7ef;
+  background: #ffffff;
+  color: #171a23;
+}
+
+.upload-template-button {
+  background: #9ba1cf;
+  color: #ffffff;
+}
+
+.is-active .upload-template-button {
+  background: #4056eb;
+}
+
+.add-learners-navigation {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.add-learners-back-button,
+.add-learners-skip-button,
+.add-learners-save-button {
+  min-height: 42px;
+  border-radius: 2px;
+  color: #3044f5;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.add-learners-back-button {
+  padding: 0 18px;
+  background: #ffffff;
+}
+
+.add-learners-forward-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.add-learners-skip-button {
+  min-width: 98px;
+  padding: 0 22px;
+  background: #f0ecff;
+  color: #9d8cff;
+}
+
+.add-learners-save-button {
+  padding: 0 18px;
+  background: #ffffff;
+}
+
+@media (max-width: 1080px) {
+  .learner-class-card {
+    grid-template-columns: 78px 90px 1fr 150px;
+    gap: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 980px) {
+  .add-learners-page {
+    grid-template-columns: 1fr;
+  }
+
+  .add-learners-sidebar {
+    min-height: auto;
+    padding: 40px 28px 130px;
+  }
+
+  .add-learners-sidebar-copy {
+    margin-bottom: 20px;
+  }
+
+  .add-learners-sidebar-art {
+    width: 260px;
+    left: auto;
+    right: 18px;
+    bottom: -28px;
+  }
+
+  .add-learners-main {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .add-learners-top-bar {
+    align-self: stretch;
+    margin-bottom: 22px;
+  }
+
+  .add-learners-content {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .add-learners-heading {
+    margin-bottom: 28px;
+  }
+
+  .add-learners-panel {
+    overflow-x: auto;
+  }
+
+  .learner-class-list {
+    min-width: 720px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .add-learners-sidebar {
+    padding: 32px 20px 118px;
+  }
+
+  .add-learners-sidebar-copy h2 {
+    font-size: 28px;
+  }
+
+  .add-learners-sidebar-copy p {
+    font-size: 14px;
+  }
+
+  .add-learners-sidebar-art {
+    width: 220px;
+  }
+
+  .add-learners-navigation,
+  .add-learners-forward-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .add-learners-back-button,
+  .add-learners-skip-button,
+  .add-learners-save-button {
+    width: 100%;
+  }
+}
